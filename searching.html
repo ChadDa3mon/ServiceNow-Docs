@@ -11,6 +11,10 @@
       
       
       
+        <link rel="prev" href="playbooks.html">
+      
+      
+        <link rel="next" href="templates.html">
       
       
         
@@ -21,7 +25,7 @@
     
     
       
-        <title>ServiceNow</title>
+        <title>Searching for Data - ServiceNow</title>
       
     
     
@@ -77,6 +81,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#everything-is-a-record-in-a-table" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -109,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Searching for Data
             
           </span>
         </div>
@@ -443,10 +452,35 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="searching.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Searching for Data
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="searching.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -462,6 +496,57 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#everything-is-a-record-in-a-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Everything is a record in a table
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple-searching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simple Searching
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dot-walking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dot Walking
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -546,9 +631,45 @@
   
 
 
-  <h1>Home</h1>
+  <h1>Searching for Data</h1>
 
-<p>This site is targetted to all the new ITIL users of ServiceNow to help them understand some of the important basics of the new platform. </p>
+<h2 id="everything-is-a-record-in-a-table">Everything is a record in a table<a class="headerlink" href="#everything-is-a-record-in-a-table" title="Permanent link">⚓︎</a></h2>
+<p>Within ServiceNow, Everything is a record in a table. Some of the most common tables you’ll interact with are</p>
+<ul>
+<li>Incidents (INC): <code>incident</code></li>
+<li>Requests (REQ): <code>sc_request</code></li>
+<li>Request Items (RITM): <code>sc_req_itms</code></li>
+<li>Change Requests (CHG): <code>change_request</code></li>
+</ul>
+<p>If you want to find the table you’re working on, you can always look at the URL in your browser and you’ll see something like this:</p>
+<p><img alt="table in url" src="images/table-in-url-pdi.png" /></p>
+<p>In the above example we see <code>incident_list.do</code>. Our table name here is <code>incident</code> and the <code>_list.do</code> part just says we're in list view. </p>
+<h2 id="simple-searching">Simple Searching<a class="headerlink" href="#simple-searching" title="Permanent link">⚓︎</a></h2>
+<p>Sometimes you want to quickly search for something in your list view via a column. You’ll first have to turn on that view by clicking the magnifying glass, but once you do, you’ll be able to search for text in any column.</p>
+<p><img alt="Searching for Contains" src="images/simple-search-contains-pdi.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Searches are CaSe INSensITive</p>
+<p>It's important to understand searches in ServiceNow are case insensitive. In other words, whether you search for "Please", "please", or "PlEAsE" you will get the same results </p>
+</div>
+<p>In the above example you’ll see I searched for <code>*Tableau</code> and that <code>*</code> is important. It tells ServiceNow to search all Incidents for any records that contain the word <strong>Tableau</strong> in the short description. You can also use the <code>=</code> prefix for exact matches.</p>
+<p>This would be useful if you were trying to find something like a ticket number.</p>
+<p><img alt="Searching with Is" src="images/simple-search-equals-pdi.png" /></p>
+<p>Lastly, you can also click on any cell in any column and either <strong>Show Matching</strong> or <strong>Filter Out</strong> that result from your search.</p>
+<p><img alt="Searching via Context" src="images/simple-search-context-pdi.png" /></p>
+<h2 id="dot-walking">Dot Walking<a class="headerlink" href="#dot-walking" title="Permanent link">⚓︎</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Dot Walking is one of the more powerful parts of the platform. It's worth taking the time to make sure you really understand this concept. </p>
+</div>
+<p>Sometimes you want to filter on a piece of data that’s not on the <strong>Incident</strong> table, but is related to the <strong>Caller</strong> (or some other reference field). This is where dot walking comes in, and it’s something you’ll have to first setup. Instead of searching for a field, scroll to the very bottom and you should see <strong>Show Related Fields</strong>. Click on this and you’ll go back to the same search box, leaving you to think nothing happened.</p>
+<p><img alt="Show Related Fields" src="images/show-related-fields.png" /></p>
+<p>But in reality, the list of fields you can now filter on has grown to encompass any related tables. When you click on the filter box again, you’ll see some entries now have a <code>==&gt;</code> pointing to another table. For example, if I wanted to search based on <strong>Caller</strong> but I only wanted to see Incidents where the caller is from the <em>Development</em> group.</p>
+<p><img alt="Opened By filter" src="images/dot-walking-caller-1.png" /></p>
+<p><img alt="Opened By filter" src="images/dot-walking-caller-2.png" /></p>
+<p>Now I can look for the Department field in this list, which allows me to search for “Caller -&gt; Department”</p>
+<p><img alt="Opened By filter" src="images/dot-walking-caller-3.png" /></p>
+<p>You can extend this dot walking ability as far as established relationships will let you. Dot walking is an incredibly useful and powerful ability, so I highly recommend taking some time to understand it.</p>
+<p>This dot walking concept also extends to things like Flow Designer as well.</p>
 
 
 

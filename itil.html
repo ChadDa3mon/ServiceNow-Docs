@@ -11,6 +11,10 @@
       
       
       
+        <link rel="prev" href="exporting.html">
+      
+      
+        <link rel="next" href="pdi.html">
       
       
         
@@ -21,7 +25,7 @@
     
     
       
-        <title>ServiceNow</title>
+        <title>ITIL - ServiceNow</title>
       
     
     
@@ -77,6 +81,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#understanding-itsm-and-itil-and-how-they-relate-to-servicenow" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -109,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              ITIL
             
           </span>
         </div>
@@ -362,10 +371,35 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="itil.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ITIL
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="itil.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -381,6 +415,46 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-itsm-and-itil-and-how-they-relate-to-servicenow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Understanding ITSM and ITIL (and How They Relate to ServiceNow)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-definitions-for-servicenow-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Definitions for ServiceNow Users
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -546,9 +620,20 @@
   
 
 
-  <h1>Home</h1>
+  <h1>ITIL</h1>
 
-<p>This site is targetted to all the new ITIL users of ServiceNow to help them understand some of the important basics of the new platform. </p>
+<h3 id="understanding-itsm-and-itil-and-how-they-relate-to-servicenow">Understanding ITSM and ITIL (and How They Relate to ServiceNow)<a class="headerlink" href="#understanding-itsm-and-itil-and-how-they-relate-to-servicenow" title="Permanent link">⚓︎</a></h3>
+<p>IT Service Management (ITSM) is a broad set of practices that organizations use to design, deliver, support, and improve the way IT services are provided to users. It focuses on ensuring that technology services align with business needs and run reliably day‑to‑day. ITIL (Information Technology Infrastructure Library) is the most widely adopted framework for ITSM. It provides standardized guidance on how to structure IT processes such as handling incidents, fulfilling requests, investigating problems, and implementing changes. ServiceNow ITSM is a practical, tool‑based implementation of these ITIL concepts, giving teams a consistent and automated way to manage work.</p>
+<p>For new ServiceNow users, understanding the ITIL structure helps explain why the platform has different record types—like Incidents, Requests, Problems, and Changes. Each exists for a specific purpose, and using them correctly keeps operations efficient and data clean. For example, an Incident is used when something is broken and needs to be restored quickly, while a Request is used when someone wants something new. Problems and Changes focus on preventing future issues and improving the environment in a controlled way.</p>
+<h3 id="key-definitions-for-servicenow-users">Key Definitions for ServiceNow Users<a class="headerlink" href="#key-definitions-for-servicenow-users" title="Permanent link">⚓︎</a></h3>
+<p><strong>Incident</strong><br />
+An unplanned interruption or a reduction in the quality of an IT service. The goal is to restore service as quickly as possible. Example: “Email is down,” or “My laptop won’t boot.”</p>
+<p><strong>Request (Service Request)</strong><br />
+A formal request for something new—access, software, equipment, information, or a standard service offering. Example: “I need access to SharePoint,” or “Please order me a new monitor.”</p>
+<p><strong>Problem</strong><br />
+The underlying cause of one or more incidents. Problem Management focuses on root‑cause analysis and long‑term fixes to prevent recurring issues. Example: multiple Incidents caused by the same network switch failure.</p>
+<p><strong>Change (Change Request)</strong><br />
+A planned and controlled modification to IT infrastructure, applications, or services. The purpose is to reduce risk while enabling improvements or fixes. Example: deploying a patch, upgrading a server, or implementing a permanent fix identified by Problem Management.</p>
 
 
 

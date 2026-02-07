@@ -11,34 +11,36 @@
       
       
       
-        <link rel="prev" href="../awa/">
+        <link rel="prev" href="itil.html">
       
       
-        <link rel="next" href="../exporting/">
+        <link rel="next" href="playbooks.html">
       
       
         
       
       
-      <link rel="icon" href="../images/logo.png">
+      <link rel="icon" href="images/logo.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>Bulk Editing - ServiceNow</title>
+        <title>PDIs - ServiceNow</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
 
     
     
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
       
     
     
@@ -51,11 +53,11 @@
       
     
     
-      <link rel="stylesheet" href="../css/print-site.css">
+      <link rel="stylesheet" href="css/print-site.css">
     
-      <link rel="stylesheet" href="../css/print-site-material.css">
+      <link rel="stylesheet" href="css/print-site-material.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -89,9 +91,9 @@
 
   
 
-<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="ServiceNow" class="md-header__button md-logo" aria-label="ServiceNow" data-md-component="logo">
+    <a href="." title="ServiceNow" class="md-header__button md-logo" aria-label="ServiceNow" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -111,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Bulk Editing
+              PDIs
             
           </span>
         </div>
@@ -190,46 +192,27 @@
       
     
     
-  </nav>
-  
+      <div class="md-header__source">
+        <a href="https://github.com/ChadDa3mon/ServiceNow-Docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
     
-      
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-  
-    
-  
-  
-    
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../audit/" class="md-tabs__link">
-          
-  
-  
-  Foundations
-
-        </a>
-      </li>
-    
-  
-
-      
-    </ul>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
-</nav>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
     
+  </nav>
   
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -243,14 +226,12 @@
                     
 
 
-  
-
 
   
 
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="ServiceNow" class="md-nav__button md-logo" aria-label="ServiceNow" data-md-component="logo">
+    <a href="." title="ServiceNow" class="md-nav__button md-logo" aria-label="ServiceNow" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -259,71 +240,28 @@
     ServiceNow
   </label>
   
+    <div class="md-nav__source">
+      <a href="https://github.com/ChadDa3mon/ServiceNow-Docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
   <ul class="md-nav__list" data-md-scrollfix>
     
       
       
   
   
-    
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Foundations
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_1">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Foundations
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
   
   
     <li class="md-nav__item">
-      <a href="../audit/" class="md-nav__link">
+      <a href="audit.html" class="md-nav__link">
         
   
   
@@ -342,16 +280,15 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
   
     <li class="md-nav__item">
-      <a href="../awa/" class="md-nav__link">
+      <a href="awa.html" class="md-nav__link">
         
   
   
@@ -370,23 +307,15 @@
     </li>
   
 
-              
-            
-              
-                
-  
-  
     
+      
+      
   
   
   
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+  
+    <li class="md-nav__item">
+      <a href="bulk-editing.html" class="md-nav__link">
         
   
   
@@ -402,20 +331,18 @@
   
 
       </a>
-      
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
   
     <li class="md-nav__item">
-      <a href="../exporting/" class="md-nav__link">
+      <a href="exporting.html" class="md-nav__link">
         
   
   
@@ -434,16 +361,15 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
   
     <li class="md-nav__item">
-      <a href="../itil/" class="md-nav__link">
+      <a href="itil.html" class="md-nav__link">
         
   
   
@@ -462,16 +388,22 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
+  
+  
+    
   
   
   
-  
-    <li class="md-nav__item">
-      <a href="../pdi/" class="md-nav__link">
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="pdi.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -487,19 +419,19 @@
   
 
       </a>
+      
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
   
     <li class="md-nav__item">
-      <a href="../playbooks/" class="md-nav__link">
+      <a href="playbooks.html" class="md-nav__link">
         
   
   
@@ -518,16 +450,15 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
   
     <li class="md-nav__item">
-      <a href="../searching/" class="md-nav__link">
+      <a href="searching.html" class="md-nav__link">
         
   
   
@@ -546,16 +477,15 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
   
     <li class="md-nav__item">
-      <a href="../templates/" class="md-nav__link">
+      <a href="templates.html" class="md-nav__link">
         
   
   
@@ -574,16 +504,15 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
   
     <li class="md-nav__item">
-      <a href="../vtb/" class="md-nav__link">
+      <a href="vtb.html" class="md-nav__link">
         
   
   
@@ -602,14 +531,6 @@
     </li>
   
 
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
     
   </ul>
 </nav>
@@ -622,17 +543,41 @@
           
             <div class="md-content" data-md-component="content">
               
+                
+
+
+
+
+              
               <article class="md-content__inner md-typeset">
                 
                   
 
 
+  
+  
 
-  <h1>Bulk Editing</h1>
 
-<p>There will be times when you need to update more than one record. Maybe you want to change the <strong>Assignment Group</strong> or <strong>Assigned to</strong> field on several Incidents. </p>
-<p>The easiest way to do this from ServiceNow is from your standard list view. Hold down CTRL (or Command on a Mac) and click on the cells you want to edit. You should see them change color. Once you have all of the cells you want to edit, double click in one of them and make your change. The system should prommpt you to confirm before making the change. </p>
-<p><img alt="Bulk Edits" src="images/bulk-edit-1.png" /></p>
+  <h1>PDIs</h1>
+
+<p>Personal Development Instances (PDIs) are an incredibly useful feature. Whether you just want to learn more about ServiceNow, or try out some crazy idea without breaking our Development instance...PDIs are the answer. </p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>These PDIs are fully unlocked, giving you access to just about every module ServiceNow offers. The only exception to this is the Now Assist stuff due to the additional strain on resources used by Now Assist. </p>
+<p>In other words, you'll have admin access to your own ServiceNow instance to do whatever you want in it. </p>
+</div>
+<p>PDIs are available to anyone (free of charge) by simply registering for an account at <a href="https://developer.servicenow.com" target="_blank">developer.servicenow.com</a>. </p>
+<p>Once you have registered there you can use their Request Instance button in the top right. </p>
+<p><img alt="Request Instance" src="images/pdi-request-instance.png" /></p>
+<p>You will want to select whatever the latest release is. As of the writing of this document it's <strong>Zurich</strong>. </p>
+<p>Once you submit your request you'll be taken back to the <strong>Manage Instance</strong> page on their site. It will take 5 or 10 minutes for your instance to be ready. </p>
+<p>While you are waiting, there's two main caveats to remember with PDIs</p>
+<ol>
+<li>They will be shut down each night. You can <em>wake</em> them from the <strong>Manage Instance</strong> section again. This process will take a good 5 or 10 minutes. </li>
+<li>If you don't log in and use your PDI within 7 or 10 days, they will reclaim it. You will get an email warning sent to your account before this happens. If it is reclaimed, you can simply request a new one when you need it again. </li>
+</ol>
+<p>Once your instance is finished being setup, you'll see a screen like this. You'll want to confirm your <strong>User role</strong> is <code>Admin</code> and then click on the <strong>Start Building</strong> button to log in. </p>
+<p><img alt="Start Building" src="images/pdi-start-building-2.png" /></p>
 
 
 
@@ -682,12 +627,12 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "toc.integrate", "content.action.edit"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["toc.integrate", "navigation.path"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../js/print-site.js"></script>
+        <script src="js/print-site.js"></script>
       
     
   </body>
