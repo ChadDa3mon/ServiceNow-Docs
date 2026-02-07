@@ -1,0 +1,61 @@
+site_name: ServiceNow
+site_author: Chadd Horanburg
+
+
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  favicon: images/logo.png
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - toc.integrate
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: light
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+nav: 
+  - 'Foundations':
+    - 'Audit Trails': audit.md
+    - 'AWA': awa.md
+    - 'Bulk Editing': bulk-editing.md
+    - 'Exporting Data': exporting.md
+    - 'ITIL': itil.md
+    - 'PDIs': pdi.md
+    - 'Playbooks': playbooks.md
+    - 'Searching for Data': searching.md
+    - 'Templates': templates.md
+    - 'Visual Task Boards': vtb.md
+
+plugins:
+  - search
+  - print-site:
+      add_to_navigation: false
+
+markdown_extensions:
+  - toc:
+      baselevel: 2
+      permalink: ⚓︎
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - attr_list
+
