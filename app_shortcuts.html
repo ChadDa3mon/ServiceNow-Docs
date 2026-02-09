@@ -11,10 +11,8 @@
       
       
       
-        <link rel="prev" href="awa.html">
       
-      
-        <link rel="next" href="exporting.html">
+        <link rel="next" href="audit.html">
       
       
         
@@ -25,7 +23,7 @@
     
     
       
-        <title>Bulk Editing - ServiceNow</title>
+        <title>Application Menu Shortcuts - ServiceNow</title>
       
     
     
@@ -81,6 +79,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#application-menu-shortcuts" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -113,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Bulk Editing
+              Application Menu Shortcuts
             
           </span>
         </div>
@@ -258,10 +261,35 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="app_shortcuts.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Application Menu Shortcuts
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="app_shortcuts.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -277,6 +305,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#application-menu-shortcuts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Application Menu Shortcuts
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -339,17 +396,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="bulk-editing.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="bulk-editing.html" class="md-nav__link">
         
   
   
@@ -365,7 +415,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -612,11 +661,19 @@
   
 
 
-  <h1>Bulk Editing</h1>
+  <h1>Application Menu Shortcuts</h1>
 
-<p>There will be times when you need to update more than one record. Maybe you want to change the <strong>Assignment Group</strong> or <strong>Assigned to</strong> field on several Incidents. </p>
-<p>The easiest way to do this from ServiceNow is from your standard list view. Hold down CTRL (or Command on a Mac) and click on the cells you want to edit. You should see them change color. Once you have all of the cells you want to edit, double click in one of them and make your change. The system should prommpt you to confirm before making the change. </p>
-<p><img alt="Bulk Edits" src="images/bulk-edit-1.png" /></p>
+<h3 id="application-menu-shortcuts">Application Menu Shortcuts<a class="headerlink" href="#application-menu-shortcuts" title="Permanent link">⚓︎</a></h3>
+<p>There are a few handy tips and tricks to help make it easier to jump around in the Application Menu. For reference, the Application Menu is what you get when you click on <strong>All</strong> in the top menu bar. </p>
+<p><img alt="App Menu" src="images/app-menu-example.png" /></p>
+<p>If you know the name table you're after, you can simply enter it in the Application Menu box and append some of the following to it</p>
+<ul>
+<li><code>.do</code>: Adding <code>.do</code> to the end of your table name will take you to the "New Record" screen for that table. For example, if you wanted to quickly create an <strong>Incident</strong> you could type in <code>incident.do</code> and hit <em>Enter</em>. </li>
+<li><code>.list</code>: Adding <code>.list</code> to the end of your table name will take you to the list view of that record. By default it will query all of the records on that table so use with caution. It is recommended to use <code>.filter</code> instead. </li>
+<li><code>.filter</code>: Adding <code>.filter</code> is similar to <code>.list</code> only it will not query any results. This allows you to first specify some filters before running your query. </li>
+</ul>
+<p>You can also use the all caps equivalent and it will do all of the same things in a new browser window. So instead of <code>incident.do</code> you can enter <code>incident.DO</code> and your new incident screen will pop up in a new browser. window. </p>
+<p>If you need help figuring out which table name you need, check out our <a href="searching.html">Searching</a> page.</p>
 
 
 

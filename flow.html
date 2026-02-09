@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="awa.html">
+        <link rel="prev" href="exporting.html">
       
       
-        <link rel="next" href="exporting.html">
+        <link rel="next" href="itil.html">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Bulk Editing - ServiceNow</title>
+        <title>Flow Designer - ServiceNow</title>
       
     
     
@@ -81,6 +81,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#flow-designer-workflow-studio" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -113,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Bulk Editing
+              Flow Designer
             
           </span>
         </div>
@@ -339,17 +344,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="bulk-editing.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="bulk-editing.html" class="md-nav__link">
         
   
   
@@ -365,7 +363,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -401,10 +398,35 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="flow.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flow Designer
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="flow.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -420,6 +442,46 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#flow-designer-workflow-studio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flow Designer (Workflow Studio)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple-demonstration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simple Demonstration
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -612,11 +674,63 @@
   
 
 
-  <h1>Bulk Editing</h1>
+  <h1>Flow Designer</h1>
 
-<p>There will be times when you need to update more than one record. Maybe you want to change the <strong>Assignment Group</strong> or <strong>Assigned to</strong> field on several Incidents. </p>
-<p>The easiest way to do this from ServiceNow is from your standard list view. Hold down CTRL (or Command on a Mac) and click on the cells you want to edit. You should see them change color. Once you have all of the cells you want to edit, double click in one of them and make your change. The system should prommpt you to confirm before making the change. </p>
-<p><img alt="Bulk Edits" src="images/bulk-edit-1.png" /></p>
+<h3 id="flow-designer-workflow-studio">Flow Designer (Workflow Studio)<a class="headerlink" href="#flow-designer-workflow-studio" title="Permanent link">⚓︎</a></h3>
+<p>Flow Designer (AKA Workflow Studio) is ServiceNow's extremely powerful low-code/no-code automation tool. Flow Designer was the original name and you will still see it called Flow Designer in many places. ServiceNow has recently rebranded the tool to Workflow Studio, but both names refer to the exact same place. If you are tryign to google for help, using "Flow Designer" will often yield better results. </p>
+<p>To get started with Flow Designer you can go to your Application Menu and simply type in <strong>Flow Designer</strong> (or <em>Workflow Studio</em>)</p>
+<p>In the screenshot below you'll see both options come up, and both of them will take you to the same place. </p>
+<p><img alt="Launching flow designer" src="images/flow-launching.png" /></p>
+<p>Once you click on either one, a new browser window will open and you'll see Workflow Studio. </p>
+<p><img alt="Flow Homepage" src="images/flow-homepage.png" /></p>
+<p>There are several exciting areas to play with once you're inside Flow Designer. </p>
+<ul>
+<li><strong>Playbooks:</strong> Playbooks are like recipe cards for your helpdesk agents. They can offer an interactive experience that gets attached to a ticket. For more information on Playbooks, please check out our <a href="playbooks.html">Playbooks</a> page. </li>
+<li><strong>Flows:</strong> Flows are an automation that has <em>Triggers</em>. These triggers will primarily be around records (a new record getting created, or an existing record getting modified). Once a trigger is met, a series of actions can be performed. </li>
+<li><strong>Subflows:</strong> Subflows are more like repeatable functions in the programming world. While they function the exact same way when it comes to the <strong>Actions</strong> you can perform, they do not have <em>Triggers</em> like flows do. Subflows are designed to be called from within a Flow (or other parts of the platform) and they have pre-defined Inputs and Outputs. If you had a certain automation you wanted to be called from multiple flows, you could put it in a subflow instead. </li>
+<li><strong>Triggers, Actions, and Decision Tables:</strong> They are outside of the scope for this article and come into play for mode advanced levels of Flow Designer. </li>
+</ul>
+<h3 id="simple-demonstration">Simple Demonstration<a class="headerlink" href="#simple-demonstration" title="Permanent link">⚓︎</a></h3>
+<p>Let's say you wanted an email to whoever a P1 Incident is assigned to. Something like this can be done in a matter of minutes with Flow Designer, no scripting is required. </p>
+<p>After creating your new Flow, you'd need to first define the trigger. In our example, we want to know if a new one is <strong>created</strong> or if an existing one is <strong>updated</strong> so we'll pick <em>Created or Updated</em></p>
+<p><img alt="Setting up our trigger" src="images/flow-demo-1.png" /></p>
+<p>We then define the <strong>conditions</strong> for our trigger. In our example, we only care about Incidents that are P1 (Priority 1 - Critical) and only when the value for <strong>Assigned To</strong> changes. </p>
+<p><img alt="Trigger Conditioins" src="images/flow-demo-2.png" /></p>
+<p>Next we need to define what action(s) should be taken once our trigger is met. Most of what you will be doing in the beginning can be found under <strong>Actions</strong>, you won't be using <em>Flow Logic</em> or <em>Subflow</em> right now. </p>
+<p>Click on the <code>+</code> and then click on <strong>Action</strong>. Type in <code>email</code> in the filter box and select the <code>Send Email</code> action. </p>
+<p><img alt="Email Action" src="images/flow-demo-3.png" /></p>
+<p>Once you click on that, you'll see fields you can fill in to help define the email we're going to send.</p>
+<p><img alt="Flow Email Action" src="images/flow-demo-4.png" /></p>
+<p>Since we're making this <em>Dynamic</em> we don't want to hard code things like email addresses. This is where dot walking comes in. For more information on dot walking, please see the dot walking section in our <a href="searching.html">searching</a> page.</p>
+<p>On the right hand side of our page you'll see a bunch of <strong>Pills</strong>. The ones with a black arrow on the left side can be expanded to access all of the fields from that record. </p>
+<p>We need to access the email address of whoever our trigger record is assigned to. In order to access this <em>Pill</em> we'll need to dot walk, starting at the <strong>Trigger Record</strong></p>
+<p><img alt="Trigger record" src="images/flow-demo-5.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The Trigger Record is a special section that always refers to the ticket that triggered our flow to run in the first place. </p>
+</div>
+<p>We are going to first expand the <em>Incident Record</em> and then we need to expand the reference to <em>Assigned to</em>. </p>
+<p><img alt="expand assigned to trigger" src="images/flow-demo-6.png" /></p>
+<p>Once we have expanded the <em>Assigned to</em> pill we can scroll down and find the pill for <strong>Email</strong>. From there, we simply drag the <em>email</em> pill into the <code>To:</code> field of our email. </p>
+<p><img alt="drag email pill" src="images/flow-demo-7.png" /></p>
+<p>Once we drag it over to the <code>To:</code> field we can mouse over things and see the full breadcrumb trail for this value to confirm everything looks right. </p>
+<p><img alt="email breadcrumb" src="images/flow-demo-7b.png" /></p>
+<p>Now we want the subject and body to say something useful, and also reference some details of the ticket. We will use the same dot walking method to find the various pills we need. Some pills we'll want to find under the Incident Record include:
+- Short Description
+- Description
+- Number</p>
+<p>We can also use HTML formatting to help make things a bit easier to read. In this example, I made our labels "Bold". </p>
+<p><img alt="final email" src="images/flow-demo-8.png" /></p>
+<p>Now that we have finished setting up our email, it's time to test things out. We can use the <strong>Test</strong> button in our flow to help make sure our email looks the way we want. </p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>When using the Test button in Flow Designer, you can reference any Incident you like. It doesn't have to be a P1 Incident for our test as the Test button bypasses the trigger. </p>
+</div>
+<p>Once you run a test in Flow Designer, you'll be able to view the results. Click on the link once your test is finished and it will take you to the <strong>Execution Logs</strong>. </p>
+<p><img alt="Flow Test" src="images/flow-demo-9.png" /></p>
+<p>The <strong>Execution Logs</strong> are a vital place to help monitor how your flows are running, along with troubleshooting things when they fail. They will show you all of the various values and steps taken etc. </p>
+<p>For now though, we can expand the body of our email and make sure it looks like what we want. </p>
+<p><img alt="preview email body" src="images/flow-demo-10.png" /></p>
 
 
 
